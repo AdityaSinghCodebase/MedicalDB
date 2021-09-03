@@ -1,8 +1,10 @@
+import Layout from "./components/Layout";
+
 function App() {
   return (
-    <div className="App">
-      <h1 style={{ color: "red" }}>This is aditya Site !!</h1>
-    </div>
+    <>
+      <Layout></Layout>
+    </>
   );
 }
 
