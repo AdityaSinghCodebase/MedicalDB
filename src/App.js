@@ -1,9 +1,16 @@
-import Layout from "./components/Layout";
+import { TabletProvider } from "./APIS/TabletList";
+import AddProduct from "./components/AddProduct";
+
+import HomePage from "./components/HomePage";
 
 function App() {
   return (
     <>
-      <Layout></Layout>
+      <TabletProvider>
+        <HomePage />
+
+        <AddProduct />
+      </TabletProvider>
     </>
   );
 }

@@ -7,24 +7,7 @@ function Layout({ children }) {
     <>
       <Navbar />
       {children}
-      <h1>this is test</h1>
-      <h1>this is test</h1>
-      <h1>this is test</h1>
-      <h1>this is test</h1>
-      <h1>this is test</h1>
-      <h1>this is test</h1>
-      <h1>this is test</h1>
-      <h1>this is test</h1>
-      <h1>this is test</h1>
-      <h1>this is test</h1>
-      <h1>this is test</h1>
-      <h1>this is test</h1>
-      <h1>this is test</h1>
-      <h1>this is test</h1>
-      <h1>this is test</h1>
-      <h1>this is test</h1>
-      <h1>this is test</h1>
-      <h1>this is test</h1>
+
       <Footer />
     </>
   );
