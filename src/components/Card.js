@@ -71,6 +71,10 @@ const useStyles = makeStyles((theme) => ({
 function Card() {
   const classes = useStyles();
   const [tablet, setTablet] = useContext(TabletList);
+
+  // const removeProd = e => {
+  //   setTablet(e.target.value)
+  // }
   return (
     <>
       {" "}
