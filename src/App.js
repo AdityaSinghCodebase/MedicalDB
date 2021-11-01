@@ -1,18 +1,24 @@
-import { TabletProvider } from "./APIS/TabletList";
-import AddProduct from "./components/AddProduct";
+import { useContext, useEffect } from "react";
+import { TabletProvider, TabletList } from "./APIS/TabletList";
 
 import HomePage from "./components/HomePage";
 
 function App() {
+  const [_, setTablet] = useContext(TabletList);
+  useEffect(() => {
+    const tablets = JSON.parse(localStorage.getItem("tablets"));
+    tablets && setTablet(tablets);
+  }, [setTablet]);
+
   return (
     <>
-      <TabletProvider>
-        <HomePage />
-
-        <AddProduct />
-      </TabletProvider>
+      <HomePage />
     </>
   );
 }
 
-export default App;
+export default () => (
+  <TabletProvider>
+    <App />
+  </TabletProvider>
+);

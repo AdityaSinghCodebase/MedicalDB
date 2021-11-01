@@ -96,10 +96,8 @@ function Card() {
               >
                 <p className={classes.p2}>Price: {tablet.price}</p>
                 <p className={classes.p3}>Stock: {tablet.stock}</p>
-                <p className={classes.p2}>Price: {tablet.price}</p>
-                <p className={classes.p3}>Stock: {tablet.stock}</p>
-                <p className={classes.p2}>Price: {tablet.price}</p>
-                <p className={classes.p3}>Stock: {tablet.stock}</p>
+                <p className={classes.p2}>Gst: {tablet.gst}</p>
+                <p className={classes.p3}>Cgst: {tablet.cgst}</p>
               </div>
 
               <div className={classes.content}>

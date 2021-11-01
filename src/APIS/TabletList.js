@@ -1,40 +1,24 @@
-import React, { useState, createContext } from "react";
+import React, { useState, createContext, useCallback } from "react";
 
 export const TabletList = createContext();
 
 export const TabletProvider = ({ children }) => {
-  const [tablet, setTablet] = useState([
+  const [tablet, _setTablet] = useState([
     {
       name: "paracitamol",
       price: "10Rs",
       stock: "125",
+      gst: 8,
+      cgst: 10,
       id: 1,
     },
-    {
-      name: "crocine",
-      price: "10Rs",
-      stock: "125",
-      id: 2,
-    },
-    {
-      name: "fulltoss",
-      price: "10Rs",
-      stock: "125",
-      id: 3,
-    },
-    {
-      name: "flexon",
-      price: "10Rs",
-      stock: "125",
-      id: 4,
-    },
-    {
-      name: "felaragon",
-      price: "10Rs",
-      stock: "125",
-      id: 4,
-    },
   ]);
+
+  const setTablet = useCallback((value) => {
+    localStorage.setItem("tablets", JSON.stringify(value));
+    _setTablet(value);
+  }, []);
+
   return (
     <TabletList.Provider value={[tablet, setTablet]}>
       {children}
