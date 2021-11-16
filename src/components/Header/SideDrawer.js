@@ -38,14 +38,24 @@ export default function SideDrawer() {
       </IconButton>
       <Drawer anchor={"left"} open={open} onClose={toggleDrawer}>
         <List>
-          {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemIcon>
-                <MenuIcon />
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItem>
-          ))}
+          {["Tablet", "Baby Products", "Injections", "Vitamins"].map(
+            (text, index) => (
+              <ListItem button key={text}>
+                <ListItemIcon>
+                  <MenuIcon />
+                </ListItemIcon>
+                <ListItemText primary={text} />
+              </ListItem>
+            )
+          )}
+        </List>
+        <List>
+          <ListItem button>
+            <ListItemIcon>
+              <MenuIcon />
+            </ListItemIcon>
+            Profile
+          </ListItem>
         </List>
       </Drawer>
     </div>

@@ -162,7 +162,7 @@ export default function AddProduct() {
           }) => (
             <Box component={"form"} className={classes.root}>
               <Typography color="inherit" variant="h4" align="center">
-                Add New Tablet
+                Add New Product
               </Typography>
 
               <div className={classes.formBody}>
@@ -171,7 +171,7 @@ export default function AddProduct() {
                   variant="outlined"
                   id="name"
                   name={"name"}
-                  placeholder="Lab File"
+                  placeholder="Name of Product"
                   value={values.name}
                   error={Boolean(touched.name && errors.name)}
                   helperText={touched.name && errors.name}
@@ -184,7 +184,7 @@ export default function AddProduct() {
                   variant="outlined"
                   id="price"
                   name={"price"}
-                  placeholder="Lab File"
+                  placeholder="Price"
                   value={values.price}
                   error={Boolean(touched.price && errors.price)}
                   helperText={touched.price && errors.price}
@@ -197,7 +197,7 @@ export default function AddProduct() {
                   variant="outlined"
                   id="stock"
                   name={"stock"}
-                  placeholder="Lab File"
+                  placeholder="Stock"
                   value={values.stock}
                   error={Boolean(touched.stock && errors.stock)}
                   helperText={touched.stock && errors.stock}
@@ -210,7 +210,7 @@ export default function AddProduct() {
                   variant="outlined"
                   id="gst"
                   name={"gst"}
-                  placeholder="Lab File"
+                  placeholder="GST"
                   value={values.gst}
                   error={Boolean(touched.gst && errors.gst)}
                   helperText={touched.gst && errors.gst}
