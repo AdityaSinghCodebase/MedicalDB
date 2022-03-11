@@ -132,7 +132,7 @@ export default function AddProduct() {
   };
 
   const handleSubmit = (values) => {
-    console.log(values);
+    
     setTablet([...tablet, values]);
   };
 
